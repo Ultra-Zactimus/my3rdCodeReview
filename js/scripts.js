@@ -1,5 +1,5 @@
 function mrRoboto(input) {
-  const roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
+  let roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
   if (input === 0) {
     return roboKotoba[0];
   } else if (input === 1) {
@@ -8,6 +8,10 @@ function mrRoboto(input) {
     return roboKotoba[2];
   } else if (input === 3) {
     return roboKotoba[3];
+  } else if (input === 5) {
+    roboKotoba = [0, 'beep', 'boop', "Won't you be my neighbor?", 4, 5];
+    let roboOboete = roboKotoba.toString();
+    return roboOboete;
   }
 }
 mrRoboto();
