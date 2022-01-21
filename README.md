@@ -34,6 +34,13 @@ Expected Result: '0' , 'beep' , 'boop' , "Won't you be my neighbor?"
 
 Test: "Should return contents of the Array if input is 5"
 Code:
-const roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
+let roboKotoba = [0, 'beep', 'boop', "Won't you be my neighbor?", 4, 5];
+let roboOboete = "0, beep, boop, Won't you be my neighbor?, 4, 5";
 mrRoboto(5);
-Expected Result: "0, beep, boop, Won't you be my neighbor?"
+Expected Result: "0, beep, boop, Won't you be my neighbor?, 4, 5"
+
+Test: "Should return beep even if 0 is first"
+let roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
+let roboOboete = "0, beep, boop, Won't you be my neighbor?, 4, 5";
+mrRoboto(01);
+Expected Result: 'beep'
