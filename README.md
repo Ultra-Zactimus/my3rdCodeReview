@@ -22,3 +22,12 @@ Code:
 const roboSwag = "Won't you be my neighbor?";
 mrRoboto(3);
 Expected Result: "Wont you be my neighbor?"
+
+Test: "should return all 3 previous conditions from an array"
+Code:
+const roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
+mrRoboto(0);
+mrRoboto(1);
+mrRoboto(2);
+mrRoboto(3);
+Expected Result: '0' , 'beep' , 'boop' , "Won't you be my neighbor?"
