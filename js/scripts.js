@@ -10,7 +10,7 @@ function mrRoboto(input) {
     return roboKotoba[3];
   } else if (input === 5) {
     roboKotoba = [0, 'beep', 'boop', "Won't you be my neighbor?", 4, 5];
-    let roboOboete = roboKotoba.toString();
+    let roboOboete = roboKotoba.join(", ");
     return roboOboete;
   }
 }
