@@ -3,8 +3,6 @@ function mrRoboto(input) {
   let userInput = input.toString();
   let roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
 
-    
-
     if (userInput.includes(0)) {
       return roboKotoba[0];
 
