@@ -41,6 +41,10 @@ Expected Result: "0, beep, boop, Won't you be my neighbor?, 4, 5"
 
 Test: "Should return beep even if 0 is first"
 let roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
-let roboOboete = "0, beep, boop, Won't you be my neighbor?, 4, 5";
 mrRoboto(01);
+Expected Result: 'beep'
+
+Test: "Should return beep no matter how many '1's are entered"
+let roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
+mrRoboto(1111);
 Expected Result: 'beep'
