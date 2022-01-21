@@ -6,21 +6,45 @@ function mrRoboto(input) {
     if (userInput.includes(0)) {
       return roboKotoba[0];
 
-    } else if (userInput.includes(1) && !userInput.includes(2 || 3 || 4 || 5 || 6 || 7 || 8 || 9)) {
+    } else if (userInput.includes(1)) {
       return roboKotoba[1];
 
-    } else if (userInput.includes(2) && !userInput.includes(3 || 4 || 5 || 6 || 7 || 8 || 9)) {
+    } else if (userInput.includes(2)) {
       return roboKotoba[2];
 
-    } else if (userInput.includes(3) && !userInput.includes(5 || 6 || 7 || 8 || 9)) {
+    } else if (userInput.includes(3)) {
       return roboKotoba[3];
 
-    } else if (userInput.includes(5) && !userInput.includes(6 || 7 || 8 || 9)) {
-      roboKotoba = [0, 'beep', 'boop', "Won't you be my neighbor?", 4, 5];
+    } else if (userInput.includes(4)) {
+      roboKotoba.push(4)
+      return roboKotoba[4];
+
+    } else if (userInput.includes(5)) {
+      roboKotoba.push(4,5);
+      let roboOboete = roboKotoba.join(", ");
+      return roboOboete;
+
+    } else if (userInput.includes(6)) {
+      roboKotoba.push(4,5,6);
+      let roboOboete = roboKotoba.join(", ");
+      return roboOboete;
+
+    } else if (userInput.includes(7)) {
+      roboKotoba.push(4,5,6,7);
+      let roboOboete = roboKotoba.join(", ");
+      return roboOboete;
+
+    } else if (userInput.includes(8)) {
+      roboKotoba.push(4,5,6,7,8);
+      let roboOboete = roboKotoba.join(", ");
+      return roboOboete;
+
+    } else if (userInput.includes(9)) {
+      roboKotoba.push(4,5,6,7,8,9);
       let roboOboete = roboKotoba.join(", ");
       return roboOboete;
 
     }
 }
 
-mrRoboto(11);
+mrRoboto(4);
