@@ -1,10 +1,9 @@
-function mrRoboto() {
+function mrRoboto(input) {
   const roboLingo = 'beep';
-  if (0) {
+  if (input === 0) {
+    return '0';
+  } else if (input === 1) {
     return roboLingo;
-  // } else if (mrRoboto(1)) {
-  //     roboLingo[1];
-  // }
-}
+  }
 }
 mrRoboto(0);
