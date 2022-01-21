@@ -59,3 +59,8 @@ mrRoboto(8)
 mrRoboto(9)
 Expected Results: '4' "0, beep, boop, Won't you be my neighbor?, 4" "0, beep, boop, Won't you be my neighbor?, 4, 5, 6" etc.
 
+Test: "Should return highest value number dispite placement"
+let roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"]
+mrRoboto(21)
+Expected Results: "boop"function mrRoboto(input) {
+
