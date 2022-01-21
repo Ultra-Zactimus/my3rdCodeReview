@@ -31,3 +31,9 @@ mrRoboto(1);
 mrRoboto(2);
 mrRoboto(3);
 Expected Result: '0' , 'beep' , 'boop' , "Won't you be my neighbor?"
+
+Test: "Should return contents of the Array if input is 5"
+Code:
+const roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
+mrRoboto(5);
+Expected Result: "0, beep, boop, Won't you be my neighbor?"
