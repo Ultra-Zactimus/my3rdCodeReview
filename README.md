@@ -16,3 +16,9 @@ Code:
 const RoboLingua = "boop";
 mrRoboto(2);
 Expected Results: "boop";
+
+Test: "Should return 'Wont you be my neighbor?' if input is 3"
+Code:
+const roboSwag = "Won't you be my neighbor?";
+mrRoboto(3);
+Expected Result: "Wont you be my neighbor?"
