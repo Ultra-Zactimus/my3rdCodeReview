@@ -1,49 +1,56 @@
 function mrRoboto(input) {
-    let inputArray = input.split("");
-    let roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
-      for (i=0; i < inputArray.length; i++)
 
-        if (inputArray.includes(0)) {
-          return roboKotoba[0];
-    
-        } else if (inputArray.includes(1)) {
-          return roboKotoba[1];
-    
-        } else if (inputArray.includes(2)) {
-          return roboKotoba[2];
-    
-        } else if (inputArray.includes(3)) {
-          return roboKotoba[3];
-    
-        } else if (inputArray.includes(4)) {
-          roboKotoba.push(4)
-          return roboKotoba[4];
-    
-        } else if (inputArray.includes(5)) {
-          roboKotoba.push(4,5);
-          let roboOboete = roboKotoba.join(", ");
-          return roboOboete;
-    
-        } else if (inputArray.includes(6)) {
-          roboKotoba.push(4,5,6);
-          let roboOboete = roboKotoba.join(", ");
-          return roboOboete;
-    
-        } else if (inputArray.includes(7)) {
-          roboKotoba.push(4,5,6,7);
-          let roboOboete = roboKotoba.join(", ");
-          return roboOboete;
-    
-        } else if (inputArray.includes(8)) {
-          roboKotoba.push(4,5,6,7,8);
-          let roboOboete = roboKotoba.join(", ");
-          return roboOboete;
-    
-        } else if (inputArray.includes(9)) {
-          roboKotoba.push(4,5,6,7,8,9);
-          let roboOboete = roboKotoba.join(", ");
-          return roboOboete;
-    
-        }
+  let inputArray = input;
+  let kotobaArray = [];
+
+  for (let index = 0; index < inputArray.length; index++) {
+    let newArray = toString(inputArray[i]);
+    console.log(newArray);
+
+    if (newArray.includes(0)) {
+      kotobaArray.push('0');
+      return kotobaArray[0];
+
+    } else if (newArray.includes(1)) {
+      return kotobaArray[1];
+
+    } else if (newArray.includes(2)) {
+      return kotobaArray[2];
+
+    } else if (newArray.includes(3)) {
+      return kotobaArray[3];
+
+    } else if (newArray.includes(4)) {
+      kotobaArray.push(4)
+      return kotobaArray[4];
+
+    } else if (newArray.includes(5)) {
+      kotobaArray.push(4, 5);
+      let roboOboete = kotobaArray.join(", ");
+      return roboOboete;
+
+    } else if (newArray.includes(6)) {
+      kotobaArray.push(4, 5, 6);
+      let roboOboete = kotobaArray.join(", ");
+      return roboOboete;
+
+    } else if (newArray.includes(7)) {
+      kotobaArray.push(4, 5, 6, 7);
+      let roboOboete = kotobaArray.join(", ");
+      return roboOboete;
+
+      } else if (newArray.includes(8)) {
+      kotobaArray.push(4, 5, 6, 7, 8);
+      let roboOboete = kotobaArray.join(", ");
+      return roboOboete;
+
+    } else if (newArray.includes(9)) {
+      kotobaArray.push(4, 5, 6, 7, 8, 9);
+      let roboOboete = kotobaArray.join(", ");
+      return roboOboete;
+
     }
+  }
+}
+
     
