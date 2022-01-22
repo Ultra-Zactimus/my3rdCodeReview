@@ -1,14 +1,17 @@
 function mrRoboto(input) {
 
   let inputArray = input;
-  let kotobaArray = [];
+  let kotobaArray = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
+  for (let i = 0; i < inputArray.length; i++) {
+    let newArray = [i];
+  }
+}
+mrRoboto(4567);
+    console.log([i]);
 
-  for (let index = 0; index < inputArray.length; index++) {
-    let newArray = toString(inputArray[i]);
-    console.log(newArray);
+    let kotobaArray = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
 
     if (newArray.includes(0)) {
-      kotobaArray.push('0');
       return kotobaArray[0];
 
     } else if (newArray.includes(1)) {
