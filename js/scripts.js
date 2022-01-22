@@ -6,6 +6,7 @@ function mrRoboto(input) {
     let newArray = [i];
   }
 }
+
 mrRoboto(4567);
     console.log([i]);
 
