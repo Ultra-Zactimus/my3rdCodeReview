@@ -1,0 +1,37 @@
+h1 {
+  color: rgb(233, 250, 76);
+  
+}
+
+h2 {
+  color:gold;
+}
+
+h3 {
+color:rgb(255, 103, 47)
+}
+
+h4 {
+  color:red
+}
+
+h5 {
+  color:chartreuse;
+}
+
+h6 {
+  color: chartreuse;
+}
+
+p {
+  color: chartreuse;
+}
+
+body {
+  background-color: black;
+  text-align: center;
+}
+
+#robo1 {
+  color:violet;
+}
