@@ -1,18 +1,30 @@
-h1 {
+#realBig {
   color: rgb(233, 250, 76);
   
 }
 
-h2 {
+#big {
   color:gold;
 }
 
-h3 {
+#normal {
 color:rgb(255, 103, 47)
 }
 
-h4 {
+#small {
   color:red
+}
+
+h2 {
+  color:chartreuse;
+}
+
+h3 {
+  color:chartreuse;
+}
+
+h4 {
+  color:chartreuse;
 }
 
 h5 {
