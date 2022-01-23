@@ -1,54 +1,48 @@
-function mrRoboto(input) {
+function mrRoboto() {
 
-  let inputArray = input;
+  let processing = document.getElementById("translate").onsubmit();
   let kotobaArray = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
-  for (let i = 0; i < inputArray.length; i++) {
-    let newArray = [i];
-  }
-}
+  for (let i = 0; i < processing.length; i++) {
+    
+    if (processing[i].length === 1) {
+      return alert(kotobaArray[1]);
 
-mrRoboto(4567);
-    console.log([i]);
-
-    let kotobaArray = ['0', 'beep', 'boop', "Won't you be my neighbor?"];
-
-    if (newArray.includes(0)) {
-      return kotobaArray[0];
-
-    } else if (newArray.includes(1)) {
-      return kotobaArray[1];
-
-    } else if (newArray.includes(2)) {
+    } if (processing[i].length === 2) {
       return kotobaArray[2];
 
-    } else if (newArray.includes(3)) {
+    } if (processing[i].length === 3) {
       return kotobaArray[3];
 
-    } else if (newArray.includes(4)) {
-      kotobaArray.push(4)
+    } if (processing[i].length === 4) {
+      kotobaArray.push(4);
       return kotobaArray[4];
-
-    } else if (newArray.includes(5)) {
-      kotobaArray.push(4, 5);
+     
+    } if (processing[i].length === 5) {
+      kotobaArray.push(4,5);
       let roboOboete = kotobaArray.join(", ");
       return roboOboete;
 
-    } else if (newArray.includes(6)) {
+    } if (processing[i].length === 6) {
       kotobaArray.push(4, 5, 6);
       let roboOboete = kotobaArray.join(", ");
       return roboOboete;
 
-    } else if (newArray.includes(7)) {
+    } if (processing[i].length === 6) {
+      kotobaArray.push(4, 5, 6);
+      let roboOboete = kotobaArray.join(", ");
+      return roboOboete;
+
+    } if (processing[i].length === 7) {
       kotobaArray.push(4, 5, 6, 7);
       let roboOboete = kotobaArray.join(", ");
       return roboOboete;
 
-      } else if (newArray.includes(8)) {
+      } if (processing[i].length === 8) {
       kotobaArray.push(4, 5, 6, 7, 8);
       let roboOboete = kotobaArray.join(", ");
       return roboOboete;
 
-    } else if (newArray.includes(9)) {
+    } if (processing[i].length === 9) {
       kotobaArray.push(4, 5, 6, 7, 8, 9);
       let roboOboete = kotobaArray.join(", ");
       return roboOboete;
@@ -57,13 +51,16 @@ mrRoboto(4567);
   }
 }
 
+
+
 $(documment).ready(function(){
 
   $("form#roboNum").submit(function(event){
     event.preventDefault();
 
+
   });
-  
+
 });
 
     
