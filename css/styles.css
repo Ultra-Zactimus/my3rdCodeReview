@@ -40,10 +40,51 @@ p {
 }
 
 body {
-  background-color: black;
   text-align: center;
+  background-color: black;
+  background-image: url("../img/Chrono-Trigger.jpg");
+}
+
+#roboger {
+  color:violet;
+
+}
+#robo0 {
+  display: none;
 }
 
 #robo1 {
-  color:violet;
+  display: none;
+}
+
+#robo2 {
+  display: none;
+}
+
+#robo3 {
+  display: none;
+}
+
+#robo4 {
+  display: none;
+}
+
+#robo5 {
+  display: none;
+}
+
+#robo6 {
+  display: none;
+}
+
+#robo7 {
+  display: none;
+}
+
+#robo8 {
+  display: none;
+}
+
+#robo9 {
+  display: none;
 }
