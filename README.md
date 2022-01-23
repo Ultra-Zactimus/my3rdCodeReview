@@ -100,6 +100,14 @@ let roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"]
 mrRoboto(21)
 Expected Results: "boop"
 
+Description: resetInput()
+
+Test: "Should Reset input field back to default on submit"
+Code:
+resetInput()
+"12312434"
+Expected Results: ""
+
 #
 
 ## Link to User Page: https://github.com/Ultra-Zactimus
