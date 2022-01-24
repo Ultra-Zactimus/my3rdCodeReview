@@ -100,14 +100,6 @@ let roboKotoba = ['0', 'beep', 'boop', "Won't you be my neighbor?"]
 mrRoboto(21)
 Expected Results: "boop"
 
-Description: resetInput()
-
-Test: "Should Reset input field back to default on submit"
-Code:
-resetInput()
-"12312434"
-Expected Results: ""
-
 #
 
 ## Link to User Page: https://github.com/Ultra-Zactimus
@@ -115,8 +107,8 @@ Expected Results: ""
 
 ## Known Bugs:
 #
-Document is in full working condition at this time.
-No known bugs. 
+Document is only returning the first value it sees instead of looking through the entire array and picking the highest number.
+Document also glitches out when characters typed into the field is more than 16 characters. I have put in a limiter to prevent the use from typing more than 16 characters in to window.
 #
 ## License:
 #
