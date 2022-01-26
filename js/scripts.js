@@ -1,74 +1,63 @@
 function mrRoboto() {
 
-  let storing = [$("input#translate").val()];
-  let converting = storing.toString();
-  let robofying = converting.split("");
+  let storing = $("input#translate").val();
+  let converting = storing.toString().split('');
+  let robofying = converting.map(Number);
+  console.log(robofying);
+  console.log(typeof(robofying));
+  let num1 = robofying[0];
+  let num2 = robofying[1];
+
   let kotobaArray = ['0', 'beep', 'boop', "Won't you be my neighbor?", 4, 5];
 
-    for(let i = 0; i < robofying.length; i++) {
+    if (num2 === NaN) {
+    //  I cry T_T I almost solved this!
 
-    if (robofying[i].includes(0)) {
-      console.log(kotobaArray[0]);
+    } else if (Math.max(num1 , num2) === 0 && Math.max(num1 , num2) < 1) {
       $("#roboNum").hide();
       $("#robo0").show();
       $("clickHide").show("#roboNum");
     
-    } else if (robofying[i].includes(1)) {
-      console.log(kotobaArray[1]);
+    } else if (Math.max(num1 , num2) > 0 && Math.max(num1 , num2) < 2) {
       $("#roboNum").hide();
       $("#robo1").show();
     
-    } else if (robofying[i].includes(2)) {
-      console.log(kotobaArray[2]);
+    } else if (Math.max(num1 , num2) > 1 && Math.max(num1 , num2) < 3) {
       $("#roboNum").hide();
       $("#robo2").show();
     
-
-    } else if (robofying[i].includes(3)) {
-      console.log(kotobaArray[3]);
+    } else if (Math.max(num1 , num2) > 2 && Math.max(num1 , num2) < 4) {
       $("#roboNum").hide();
       $("#robo3").show();
     
-    } else if (robofying[i].includes(4)) {
-      console.log(kotobaArray[4]);
+    } else if (Math.max(num1 , num2) > 3 && Math.max(num1 , num2) < 5) {
       $("#roboNum").hide();
       $("#robo4").show();
-    
-     
-    } else if (robofying[i].includes(5)) {
-      console.log(kotobaArray[5]);
+  
+    } else if (Math.max(num1 , num2) > 4 && Math.max(num1 , num2) < 6) {
       $("#roboNum").hide();
       $("#robo5").show();
-    
-
-    } else if (robofying[i].includes(6)) {
-      console.log(kotobaArray[6]);
+  
+    } else if (Math.max(num1 , num2) > 5 && Math.max(num1 , num2) < 7) {
       $("#roboNum").hide();
       $("#robo6").show();
     
-
-    } else if (robofying[i].includes(7)) {
-      console.log(kotobaArray[7]);
+    } else if (Math.max(num1 , num2) > 6 && Math.max(num1 , num2) < 8) {
       $("#roboNum").hide();
       $("#robo7").show();
     
-    } else if (robofying[i].includes(8)) {
-      console.log(kotobaArray[8]);
+    } else if (Math.max(num1 , num2) > 7 && Math.max(num1 , num2) < 9) {
       $("#roboNum").hide();
       $("#robo8").show();
     
-
-    } else if (robofying[i].includes(9)) {
-      console.log(kotobaArray[9]);
+    } else if (Math.max(num1 , num2) > 8 || Math.max(num1) > 8) {
       $("#roboNum").hide();
       $("#robo9").show();
     
-
     } else {
       return alert("Mr. Robogers: \"You have entered an invalid Input! BEEP! BOOP!\nONLY UNDERSTAND NUMBERS!\n TrY aGa1n N3iGhBoR! \"");
-    
+      
     }   
-  }
 }
 
 
