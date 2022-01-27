@@ -88,13 +88,3 @@ body {
 #robo9 {
   display: none;
 }
-
-.clickHide {
-  cursor: pointer;
-  color: #00cc00;
-}
-
-.clickHide:hover {
-  text-decoration: underline;
-
-}
