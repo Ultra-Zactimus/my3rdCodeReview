@@ -1,50 +1,53 @@
 function mrRoboto() {
-  let storing = $("input#translate").val();
-  let converting = storing.toString().split('');
-  let kotobaArray = ['0', 'beep', 'boop', "Won't you be my neighbor?", 4, 5];
 
-  for (let i = 0; i < converting.length; i++) {
-    let robofying = converting[i];
+  let input = $("input#translate").val().split('');
 
-    if (robofying.includes('0')) {
-      $("#robo0").show();
-    
-    } else if (robofying.includes('1')) {
-      $("#robo1").show();
-    
-    } else if (robofying.includes('2')) {
-      $("#robo2").show();
-    
-    } else if (robofying.includes('3')) {
-      $("#robo3").show();
-    
-    } else if (robofying.includes('4')) {
-      $("#robo4").show();
-  
-    } else if (robofying.includes('5')) {
-      $("#robo5").show();
-  
-    } else if (robofying.includes('6')) {
-      $("#robo6").show();
-    
-    } else if (robofying.includes('7')) {
-      $("#robo7").show();
-    
-    } else if (robofying.includes('8')) {
-      $("#robo8").show();
-    
-    } else if (robofying.includes('9')) {
-      $("#robo9").show();
-    
+  length = input.length;
+
+  let robofying = [];
+
+  for (i = 0; i < length; i++) {
+    robofying.push(parseInt(input[i]));
+
+    if (Math.max(...robofying) === 0) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\" </h2>");
+
+    } else if (Math.max(...robofying) === 1) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"beep\" </h2>");
+
+    } else if (Math.max(...robofying) === 2) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"boop\" </h2>");
+
+    } else if (Math.max(...robofying) === 3) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"Won't you be my Neighbor?\" </h2>");
+
+    } else if (Math.max(...robofying) === 4) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: 4 </h2>");
+
+    } else if (Math.max(...robofying) === 5) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5 </h2>");
+
+    } else if (Math.max(...robofying) === 6) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5, 6 </h2>");
+
+    } else if (Math.max(...robofying) === 7) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5, 6, 7 </h2>");
+
+    } else if (Math.max(...robofying) === 8) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5, 6, 7, 8 </h2>");
+
+    } else if (Math.max(...robofying) === 9) {
+      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5, 6, 7, 8, 9 </h2>");
+
     } else {
       return alert("Mr. Robogers: \"You have entered an invalid Input! BEEP! BOOP!\nONLY UNDERSTAND NUMBERS!\n TrY aGa1n N3iGhBoR! \"");
-    } 
-  }  
+    }
+  }
 }
 
 $(document).ready(function() {
 
-  $("form#roboNum").submit(function(event) {
+  $("#getResults").click(function(event) {
 
     mrRoboto();
 

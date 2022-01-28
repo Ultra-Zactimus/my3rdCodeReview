@@ -107,8 +107,8 @@ Expected Results: "boop"
 
 ## Known Bugs:
 #
-Document is only returning the first value it sees instead of looking through the entire array and picking the highest number.
-Document also glitches out when characters typed into the field is more than 16 characters. I have put in a limiter to prevent the use from typing more than 16 characters in to window.
+Document is in a completed state.
+No known bugs.
 #
 ## License:
 #
