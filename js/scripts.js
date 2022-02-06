@@ -1,58 +1,35 @@
-function mrRoboto() {
+function mrRoboto(translator) {
 
-  let input = $("input#translate").val().split('');
+  translator = parseInt(translator);
+  let roboKotoba = [];
 
-  length = input.length;
+  for (let index = 0; index <= translator; index++) {
 
-  let robofying = [];
+    let robofying = index.toString();
 
-  for (i = 0; i < length; i++) {
-    robofying.push(parseInt(input[i]));
+    if (robofying.includes('3')) {
+      roboKotoba.push("Won't you be my neighbor?");
 
-    if (Math.max(...robofying) === 0) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\" </h2>");
+    } else if (robofying.includes('2')) {
+      roboKotoba.push("Boop");
 
-    } else if (Math.max(...robofying) === 1) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"beep\" </h2>");
-
-    } else if (Math.max(...robofying) === 2) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"boop\" </h2>");
-
-    } else if (Math.max(...robofying) === 3) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"Won't you be my Neighbor?\" </h2>");
-
-    } else if (Math.max(...robofying) === 4) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: 4 </h2>");
-
-    } else if (Math.max(...robofying) === 5) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5 </h2>");
-
-    } else if (Math.max(...robofying) === 6) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5, 6 </h2>");
-
-    } else if (Math.max(...robofying) === 7) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5, 6, 7 </h2>");
-
-    } else if (Math.max(...robofying) === 8) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5, 6, 7, 8 </h2>");
-
-    } else if (Math.max(...robofying) === 9) {
-      $("#roboger").html("<h2 id='roboger'>Mr. Roboger: \"0\", \"beep\", \"boop\", \"Won't you be my Neighbor?\", 4, 5, 6, 7, 8, 9 </h2>");
+    } else if (robofying.includes('1')) {
+      roboKotoba.push("Beep");
 
     } else {
-      return alert("Mr. Robogers: \"You have entered an invalid Input! BEEP! BOOP!\nONLY UNDERSTAND NUMBERS!\n TrY aGa1n N3iGhBoR! \"");
+      roboKotoba.push(robofying);
     }
-  }
+  } return roboKotoba;
 }
 
 $(document).ready(function() {
-
   $("#getResults").click(function(event) {
-
-    mrRoboto();
-
     event.preventDefault();
 
-  });
+    let neighborInput = $("input#translate").val();
+    let recieving = mrRoboto(neighborInput);
+    const roboLingo = recieving.join(", ");
 
+    $("#roboger").html("<h2 id='roboger'>Mr. Roboger: " + roboLingo + "</h2>");
+  });
 });
